@@ -41,8 +41,10 @@ Vendor-ID = 0x2E8A
 | 0x000D | Raspberry Pi | Raspberry Pi USB3HUB ( USB2 hub part) |  |
 | 0x000E | Raspberry Pi | Raspberry Pi USB3HUB ( USB3 hub part) |  |
 | 0x000F | Raspberry Pi | Raspberry Pi RP2350 boot | [RP2350](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html) |
-| 0x0010 | Raspberry Pi | |
+| 0x0010 | Raspberry Pi | Raspberry Pi 500 QMK keyboard firmware | https://github.com/raspberrypi/QMK |
 | 0x0011 | Raspberry Pi | |
+| 0x0012 | Raspberry Pi | |
+| 0x0013 | Raspberry Pi | Raspberry Pi USB Ethernet gadget | |
 | **Commercial** ||||
 | **0x1000 - 0x1fff** ||||
 | 0x1000 | Cytron Technologies | Cytron Maker Pi RP2040 | https://www.cytron.io/p-maker-pi-rp2040 |
@@ -158,6 +160,7 @@ Vendor-ID = 0x2E8A
 | 0x107D | Haute ?cole d'ing?nierie et d'architecture | Picomo | https://go.heia-fr.ch/picomo |
 | 0x107E | Cytron Technologies | Cytron EDU PICO for Pico | https://www.cytron.io/p-edu-project-and-innovation-kit-for-pico-w |
 | 0x107F | x-pantion | Croco Gameboy Cartridge | https://github.com/shilga/rp2040-gameboy-cartridge-firmware |
+| 0x1080 | PiKVM LTD | PiKVM Switch Multiport Extender | https://pikvm.org/products/#pikvm-switch |
 | 0x1081 | Pimoroni Ltd | Inky Frame 7.3" | https://shop.pimoroni.com/products/inky-frame-7-3 |
 | 0x1082 | Lost Cause Photographic, LLC | GPI Controller Mk. 1 | https://lostcause.photo/projects/controlroom/ |
 | 0x1083 | Waveshare Electronics | RP2040-PiZero | https://www.waveshare.com/RP2040-PiZero.htm |
@@ -200,14 +203,14 @@ Vendor-ID = 0x2E8A
 | 0x10AD | ZELLMECHANIK DRESDEN GmbH | AcCellerator | https://zellmechanik.com |
 | 0x10AE | Datanoise | PicoADK v2 (RP2350) | https://datanoise.shop/products/picoadk-v2 |
 | 0x10AF | Sting Alleman |  | There's none - this is a small batch of custom made products |
-| 0x10B0 | Waveshare Electronics | RP2350-Zero | No website yet |
-| 0x10B1 | Waveshare Electronics | RP2350-Plus | No website yet |
-| 0x10B2 | Waveshare Electronics | RP2350-Tiny | No website yet |
-| 0x10B3 | Waveshare Electronics | RP2350-LCD-1.28 | No website yet |
-| 0x10B4 | Waveshare Electronics | RP2350-Touch-LCD-1.28 | No website yet |
-| 0x10B5 | Waveshare Electronics | RP2350-One | No website yet |
-| 0x10B6 | Waveshare Electronics | RP2350-GEEK | No website yet |
-| 0x10B7 | Waveshare Electronics | RP2350-LCD-0.96 | No website yet |
+| 0x10B0 | Waveshare Electronics | RP2350-Zero | https://www.waveshare.com/rp2350-pizero.htm |
+| 0x10B1 | Waveshare Electronics | RP2350-Plus | https://www.waveshare.com/rp2350-plus.htm |
+| 0x10B2 | Waveshare Electronics | RP2350-Tiny | https://www.waveshare.com/rp2350-tiny.htm |
+| 0x10B3 | Waveshare Electronics | RP2350-LCD-1.28 | https://www.waveshare.com/rp2350-lcd-1.28.htm |
+| 0x10B4 | Waveshare Electronics | RP2350-Touch-LCD-1.28 | https://www.waveshare.com/rp2350-touch-lcd-1.28.htm |
+| 0x10B5 | Waveshare Electronics | RP2350-One | https://www.waveshare.com/rp2350-one.htm |
+| 0x10B6 | Waveshare Electronics | RP2350-GEEK | https://www.waveshare.com/rp2350-geek.htm |
+| 0x10B7 | Waveshare Electronics | RP2350-LCD-0.96 | https://www.waveshare.com/rp2350-lcd-0.96.htm |
 | 0x10B8 | ALS | PROG-001-3300 | - |
 | 0x10B9 | PicoScratch | PicoScratch MINT | https://www.picoscratch.de/mint |
 | 0x10BA | StratoRise Ltd | SRGS | https://stratorise.com |
@@ -230,3 +233,36 @@ Vendor-ID = 0x2E8A
 | 0x10CF | Velocitas Imperium | Equus 296 GTX | https://velocitasimperium.com/products/equus-296-gt3 |
 | 0x10D0 | The Hack Foundation, DBA Hack Club | Orpheus Pico | orpheuspico.hackclub.com |
 | 0x10D2 | Simracing-PC | SPC Button Plate | https://simracing-pc.de/en/2025/03/17/diy-project-super-budget-button-plate-with-leds/ |
+| 0x10D4 | WIZnet Co., Ltd. | W55RP20 | https://wiznet.io/products/ionic-chips/w55rp20 |
+| 0x10D5 | Bastl s.r.o. | Kastle 2 | https://bastl-instruments.com/instruments |
+| 0x10D6 | Marvin Kross ma.kro Software | I4E Flight Sim Interface | no link yet, estimated to be released Q3-2025 to Q1-2026 |
+| 0x10D7 | Rabbit Hole Computing |  | https://zuluscsi.com |
+| 0x10D8 | Music Thing Ltd  | Music Thing Radio Music  | https://www.musicthing.co.uk/Radio-Music/ (page will be upgraded when the RP2040 version is launched, replacing this Teensy version)  |
+| 0x10D9 | icedragon.io | stac2  | https://icedragon.io/stac2/ |
+| 0x10DA | ACustomArcade LLC | AGC2P-Coleco | https://acustomarcade.com |
+| 0x10DB | Velocitas Imperium | P8W-DDU | https://velocitasimperium.com/products/p8w-ddu |
+| 0x10DC | Velocitas Imperium | VI-RSR | https://velocitasimperium.com/products/vi-rsr |
+| 0x10DD | Hand Held Legend | 1. GC Ultimate| https://handheldlegend.com/products/gc-ultimate-controller |
+| 0x10DF | Hand Held Legend, LLC | ProGCC | https://handheldlegend.com/products/progcc-kit-wireless-wired-bundle |
+| 0x10E0 | Bonziri/BZL | FireBird | https://booth.pm/ja/items/4934916 |
+| 0x10E1 | TwentyOne Performance | 21R-P1X | https://twentyoneperformance.com |
+| 0x10E2 | KODAI Racing | KODAI - MF1 | https://kodairacing.com |
+| 0x10E3 | WallyWare, inc. | CROSSplate | https://pi-plates.com/product/crossplate/ |
+| 0x10E5 | AndGAMER Inc. | PS4 FireBird | https://voidgaming.jp/products/ps4firebird |
+| 0x10E4 | un-Creatrix | OHIS Kiss Modules | https://ohis-radio-kiss-adapter.readthedocs.io/en/latest/# (This will soon be an available product for sale just pending Release Candidate Validation) |
+| 0x10E6 | Witine Limited | USB HSM | Custom products |
+| 0x10E7 | WIZnet Co., Ltd. | W6300-EVB-Pico | https://wiznet.io/products/evaluation-boards/w6300-evb-pico |
+| 0x10E8 | WIZnet Co., Ltd. | W6300-EVB-Pico2 | https://wiznet.io/products/evaluation-boards/w6300-evb-pico2 |
+| 0x10EA | H. Diebold GmbH & Co. | Digital Pullforcegauge | https://www.hsk.com/produkte/messtechnik/ |
+| 0x10EB | SOELPEC TEKNOLOJI LTD. STI. | SOELPEC - Terra LX |  |
+| 0x10EC | Soldered Electronics d.o.o. | Soldered NULA Max RP2350 | We are still working on it! It should be https://soldered.com/product/nula-max-rp2350/ |
+| 0x10ED | OGMAVision LLC | OpenOGMA Filter Wheel | https://getogma.com/products/OFW52i |
+| 0x10EE | Amken LLC. | Crea8  |  |
+| 0x10EF | SOELPEC TEKNOLOJI LTD. STI. | SOELPEC - XR-7 Display |  |
+| 0x10F0 | Kage Games Limited | Ant64-ICP | http://ant64.com/icp |
+| 0x10F1 | Dark Bio AG | Ark I | |
+| 0x10F2 | simplexion GmbH | FADEC | https://continentaldiesel.com/cd-135/ |
+| 0x10F4 | Canarin | Canarin Fub | in fabrication yet |
+| 0x10F5 | Kinoshita Laboratory | Kinoshita Lab's products | ONE OF THE EXAMPLE: https://github.com/kinoshita-lab/StemsMIDI |
+| 0x10F7 | Flight Deck DIY | G1000 NXi | https://flightdeckdiy.com/products/g1000-nxi-plug-and-play-glass-cockpit-for-msfs-2024?variant=45056364839110 |
+| 0x10F8 | Svalboard LLC | Svalboard Lightly | www.svalboard.com |
